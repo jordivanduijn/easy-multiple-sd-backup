@@ -14,7 +14,7 @@ When prompted, reboot the Raspberry Pi.
 ## Usage
 
 1. Boot the Raspberry Pi
-2. Plug in the backup storage device (or camera, if you configured Little Backup Box as described above)
+2. Plug in the backup storage device
 3. Plug in as many SD card readers as you want and wait until the Pi shuts down
 
 To geocorrelate the backed up photos, place a GPX file in the root of the storage device before plugging it into the Raspberry Pi.
