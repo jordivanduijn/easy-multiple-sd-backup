@@ -18,7 +18,7 @@ sudo setfacl -Rdm g:pi:rw /media/storage
 cd
 git clone https://github.com/jordivanduijn/easy-multiple-sd-backup.git
 
-sudo crontab -l | { cat; echo "@reboot sudo /home/pi/easy-multiple-sd-backup/backup.sh > /home/pi/easy-multiple-sd-backup/output.log"; } | sudo crontab
+sudo crontab -l | { cat; echo "@reboot sudo /home/pi/easy-multiple-sd-backup/emsb.sh > /home/pi/easy-multiple-sd-backup/output.log"; } | sudo crontab
 
 sudo sed -i 's|'media_dir=/var/lib/minidlna'|'media_dir=/media/storage'|' /etc/minidlna.conf
 sudo service minidlna start
